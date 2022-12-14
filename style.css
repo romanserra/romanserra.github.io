@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Modificacion general */
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+
+button{
+    cursor: pointer;
+    border: 1px solid black;
+    width: 200px;
+    height: 40px;
+    background-color: rgb(37, 236, 219);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover{
+    opacity: 7;
+}
+
+/* Navegacion */
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto; 
+    width: 100%;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+    list-style: none;
+}
+
+.logo{
+    width: 300px;
+    height: 200px;
+}
+
+header ul a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header ul a:hover{
+    color:#4EEA87
+}
+
+/* MAIN */
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 100%;
+    background-image: url(/images/fondo.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#nuestros-programas{
+    color: black;
+    text-align: center;
+    margin: 10px;
+}
+
+#nuestros-programas h3{
+    color: white;
+}
+
+#nuestros-programas .container{
+    padding: 30px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/images/team.jpeg);
+
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/images/mejoratusalud.jpeg);
+  
+}
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(/images/energia.jpeg);
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+#form {
+    height: 450px;
+    width: 300px;
+    border: 3px solid greenyellow;
+    background-color: azure;
+    padding: 20px 0px 0px 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    color: white;
+    background-color: #4EEA87;
+    text-align: center;
+    width: 250px;
+    height: 30px;
+    font-weight: bold;
+}
+
+.form h2{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 15px 0px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+    height: 10vh;
+    margin-top: 15px 0px;
+}
+
+.iframe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.tabla{
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border: 20px groove #1c87c9;
+  }
+
+  th {
+    border: 5px solid #095484;
+  }
+
+/* Responsive */ 
+
+@media (min-width:720px){
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header ul{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+        font-size: 25px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta{
+        padding: 170px;
+    }
+
+    .hero{
+        display: flex;
+        flex-direction: row;
+        height: 70vh;
+    }
+    
+}
+
+/* NOSOTROS */
+
+.descarga{
+    text-decoration: none;
+    font-size: 12px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 20px 0px;
+    padding: 20px 0px;
+}
